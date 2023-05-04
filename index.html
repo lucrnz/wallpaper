@@ -3,9 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>lucdev</title>
+    <meta property="og:description" content="my wallpaper!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="lucdev-wallpaper" />
+    <meta property="og:title" content="lucdev-wallpaper" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="lucdev-wallpaper" />
+    <meta property="twitter:description" content="my wallpaper!" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 
       :root {
         font-family: "Inconsolata", monospace;
@@ -14,28 +23,70 @@
       html,
       body {
         overflow: hidden;
-        height: 100vh;
+        height: 99vh;
       }
 
       body {
+        padding: 128px;
+        border: 1rem rgba(255, 255, 255, 0.12) dashed;
+        box-sizing: border-box;
         background: linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0.9) 70%,
-          rgba(0, 0, 0, 0.9) 90%
+          rgba(0, 0, 0, 0.892) 20%,
+          rgba(0, 0, 0, 0.9) 80%
         );
         color: rgba(255, 255, 255, 0.9);
       }
 
-      #name {
+      #center {
+        display: flex;
+        flex-direction: row;
         position: fixed;
-        font-size: 6rem;
+        align-items: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        gap: 1rem;
+      }
+
+      #name {
+        font-size: 6rem;
+      }
+
+      #name > span {
+        color: #6c2bd9; /*purple-700 on tw*/
+      }
+
+      #tags {
+        font-family: "Nova Mono", monospace;
+        font-size: 4rem;
+      }
+
+      #tags > span {
+        color: #84e1bc; /* green-300 on tw*/
+      }
+
+      a,
+      a:visited {
+        color: unset;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: unset;
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <span id="name">lucdev</span>
+    <div id="center">
+      <a href="https://github.com/lucrnz/wallpaper"
+        ><span id="tags">&lt;&nbsp;<span>/</span>&gt;</span></a
+      >
+      <a href="https://lucdev.gay" target="_blank"
+        ><span id="name"><span>luc</span>dev</span></a
+      >
+    </div>
   </body>
 </html>
