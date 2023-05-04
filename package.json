@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pnpm exec browser-sync start --server --files \"./*\""
+    "start": "pnpm exec browser-sync start --server --files \"./*\"",
+    "build": "/bin/sh ./scripts/build.sh"
   },
   "keywords": [],
   "author": "luc<lucdev.net>",
