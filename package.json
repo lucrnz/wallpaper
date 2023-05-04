@@ -1,0 +1,16 @@
+{
+  "name": "luc-wallpaper",
+  "version": "1.0.0",
+  "description": "my wallpaper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm exec browser-sync start --server --files \"./*\""
+  },
+  "keywords": [],
+  "author": "luc<lucdev.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.29.1"
+  }
+}
